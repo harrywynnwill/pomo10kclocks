@@ -1,0 +1,2 @@
+class Pomoclock < ApplicationRecord
+end

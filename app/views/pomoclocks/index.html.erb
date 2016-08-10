@@ -1,0 +1,16 @@
+<h1>Listing Pomoclocks</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @pomoclocks.each do |pomoclock| %>
+    <tr>
+      <td><%= pomoclock.start_time %></td>
+      <td><%= pomoclock.finish_time %></td>
+      <td><%= link_to 'Show', pomoclock_path(pomoclock) %></td>
+    </tr>
+  <% end %>
+</table>
